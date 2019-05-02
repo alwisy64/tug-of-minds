@@ -1,0 +1,14 @@
+<launch>
+	<arg name="addr" />
+	<node name="mindwave" pkg="mindwave_driver" type="mindwave_node.py" output="screen">
+	  <param name="addr" value="$(arg addr)" />
+	</node>
+	
+	<node pkg="mindwave_teleop" type="meditation_game.py" name="meditaiton_game"  output="screen">
+		<param name="scale_linear" value="0.5" type="double"/>
+		<param name="scale_angular" value="1.5" type="double"/>
+		<param name="meditation_threshold" value="50" type="int"/>
+		<param name="attention_threshold" value="50" type="int"/>
+		<remap from="meditation_game/cmd_vel" to="cmd_vel_mux/input/teleop"/>
+	</node>
+</launch>
