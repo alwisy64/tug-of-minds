@@ -15,12 +15,14 @@ This repository contains the code to set up a bluetooth connection to one Neuros
 For the meditation game:
 Turtlebot begins moving towards user. If user's meditation value reaches above threshold of 50, Turtlebot will stop.
 
+
 For the attention game:
 Turtlebot will move only if attention value reaches above threshold of 50. 
 
 For both games, once Turtlebot moves a distance of approximately 10 feet, it stops. 
 
 For intial setup and installation of packages, see the link above. 
+
 
 To run the meditation game:
 roslaunch mindwave_teleop meditation_game.launch addr:=:00:00:00:00:00 #here is address of current mindwave headset you are using
