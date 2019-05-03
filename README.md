@@ -3,8 +3,8 @@ Mindwave Tug-of-Minds
 Repository for the Tug of Minds group made for a project in a Human-Robot Interaction course at Rhodes College.
 
 Contributers:
-Claire Payne
-Yavin Alwis
+Claire Payne,
+Yavin Alwis,
 Will Robichaux
 
 Code was adapted from this Mindwave bluetooth driver, written by Steve Cruz.
